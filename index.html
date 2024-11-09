@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" ></link>
+ 
     <title>MemOgeN</title>
 </head>
 <body>
+    
     <div class="conteiner">
-        <h1>Mem Generator</h1>
-        <div class="controls"> 
-            <input type="file" name="image" id="imageInput" />
-            <input type="text" name="topText" id="text1">
-            <input type="text" name="lowText" id="text2">
+        <h1>Memo Generator</h1>
+        <div id="controls">
+        <input type="file" id="imageInput" accept="image/*">
+        <br>
+        <input type="text" id="text1" placeholder=" Enter the first fraze">
+        <input type="text" id="text2" placeholder=" Enter the secnd fraze">
+    </div>
+
+        <div id="canvasContainer">
+            <canvas id="imageCanvas" width="800" height="600"></canvas>
         </div>
-        <div class="canvasConteiner">
-            <canvas id="canvas"></canvas>
-        </div>
+        <br> 
         <div>
-            <button id="downloadButton">Download</button>
+            <button id="downloadBtn" title="Download image"> Download
+                <img src="https://img.icons8.com/ios-filled/50/000000/download.png" alt="Download">
+            </button>
         </div>
 
     </div>
-    
+    <script src="script.js" defer></script>
 </body>
 </html>

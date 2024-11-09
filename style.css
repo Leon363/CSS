@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,33 +8,28 @@ body{
     align-items: center;
     background-color: #f0f0f0;
 }
-
-.conteiner {
+#container {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
     max-width: 90vw;
     max-height: 90vh;
     overflow: auto;
 }
-
-.controls {
+#controls {
     margin-bottom: 20px;
 }
-
-.controls input[type="file"] {
+#controls input[type="file"] {
     margin-bottom: 10px;
 }
-
-.controls input[type="text"] {
+#controls input[type="text"] {
     width: 200px;
     padding: 5px;
     margin: 5px;
 }
-
-.canvasConteiner {
+#canvasContainer {
     position: relative;
     display: inline-block;
     border: 2px solid #ccc;
@@ -44,7 +39,25 @@ body{
     max-height: 600px;
     overflow: hidden;
 }
-
-.downloadButton {
+canvas {
+    cursor: crosshair;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+#downloadBtn {
     margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+#downloadBtn img {
+    width: 50px;
+    height: 50px;
+}
+@media (max-width: 850px) {
+    canvas {
+        width: 100%;
+        height: auto;
+    }
 }

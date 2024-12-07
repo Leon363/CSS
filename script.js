@@ -124,7 +124,7 @@ const canvas = document.getElementById('imageCanvas');
       x: (evt.clientX - rect.left) * (canvas.width / rect.width),
       y: (evt.clientY - rect.top) * (canvas.height / rect.height)
     };
-  }
+  } 
 
   // Скачивание изображения
   downloadBtn.addEventListener('click', function() {

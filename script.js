@@ -107,13 +107,15 @@ const canvas = document.getElementById('imageCanvas');
       drawCanvas();
     }
   });
-
+ 
   canvas.addEventListener('mouseup', function() {
     selectedText = null;
   });
 
   canvas.addEventListener('mouseleave', function() {
-    selectedText = null;
+    
+    selectedText =  null;
+     
   });
 
   function getMousePos(canvas, evt) {
